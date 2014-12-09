@@ -29,38 +29,28 @@ module.exports = function( grunt ) {
         },
 
         watch : {
-            files : [ '_layouts/*.html',
+            options: {
+                livereload: true
+            },
+            files : [ '_includes/*.html',
+                      '_layouts/*.html',
                       '_posts/*.md',
                       'css/main.css',
                       '_config.yml',
                       'index.html',
                       '404.html' ],
-            tasks : [ 'cssmin','shell:jekyllBuild' ],
+            tasks : [ 'cssmin', 'shell:jekyllBuild' ],
         },
-
-        browserSync : {
-            dev: {
-                bsFiles: {
-                    src : 'css/*.css'
-                },
-                options: {
-                    server: {
-                        baseDir: "./_site/"
-                    },
-                    watchTask: true // < VERY important
-                }
-            }
-        }
+        
     });
 
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-csslint');
     grunt.loadNpmTasks('grunt-shell');
-    grunt.loadNpmTasks('grunt-browser-sync');
 
     // register custom grunt tasks
     grunt.registerTask( 'lintcheck', [ 'cssmin','csslint', 'shell:jekyllBuild' ] )
-    grunt.registerTask( 'dev', [ 'cssmin', 'shell:jekyllBuild', 'browserSync', 'watch' ] )
+    grunt.registerTask( 'dev', [ 'cssmin', 'shell:jekyllBuild', 'watch' ] )
     grunt.registerTask( 'deploy', [ 'cssmin', 'shell:jekyllDeploy' ] )
 };
