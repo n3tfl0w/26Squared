@@ -315,6 +315,9 @@ a:visited { color: #205caa; }
 	/*A high perspective to give the UL an isometric look*/
 	perspective: 3000;
 }
+.protoimg{
+    perspective: 3000;
+}
 
 .gridly {
     width: 1060px;
@@ -325,6 +328,14 @@ a:visited { color: #205caa; }
 	transform: rotateX(60deg) rotateZ(-50deg);
 	/*Preserve 3D style for children*/
 	transform-style: preserve-3d;
+}
+.lefty{
+    width: 1060px;
+	position: relative;
+    float: right;
+    top: -200px;
+    right: 0px;
+    left: -200px;
 }
 .gridly li {
 	height: 600px; width: 485px;
@@ -372,24 +383,90 @@ a:visited { color: #205caa; }
 }
 
 /*We will add a light gradient to the sides to give some lighting effect*/
-.one {
+.oneh {
 	background: 
-		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/HeldDesign.jpg");
+		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/HeldDesign.png");
 }
-.two {
+.twoh {
 	background: 
-		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/HeldDesign.jpg");
+		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/HeldDesign.png");
 }
-.three {
+.threeh {
 	background: 
-		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/HeldDesign.jpg");
+		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/HeldDesign.png");
 }
-.four {
+.fourh {
 	background: 
-		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/HeldDesign.jpg");
+		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/HeldDesign.png");
 }
 
+.onew {
+	background: 
+		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/wam.png");
+}
+.twow {
+	background: 
+		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/wam2.png");
+}
+.threew {
+	background: 
+		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/wam3.png");
+}
+.fourw {
+	background: 
+		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/wam.png");
+}
 
+.onep {
+	background: 
+		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/Pressline.png");
+}
+.twop {
+	background: 
+		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/Pressline2.png");
+}
+.threep {
+	background: 
+		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/pressline3.png");
+}
+.fourp {
+	background: 
+		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/pressline4.png");
+}
+
+.onec {
+	background: 
+		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/cibse4.png");
+}
+.twoc {
+	background: 
+		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/cibse2.png");
+}
+.threec {
+	background: 
+		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/cibse3.png");
+}
+.fourc {
+	background: 
+		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/CIBSEIreland.png");
+}
+
+.ones {
+	background: 
+		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/sllconf1.png");
+}
+.twos {
+	background: 
+		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/sllconf2.png");
+}
+.threes {
+	background: 
+		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/sllconf3.png");
+}
+.fours {
+	background: 
+		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/sllconf1.png");
+}
 
 
 
@@ -753,6 +830,19 @@ li.under{
     float: none;
     clear: both;
   }
+    .gridly {
+    width: 1060px;
+	position: relative;
+    left: -300px;
+    top: 200px;
+	/*3D Transform*/
+	transform: none;
+	/*Preserve 3D style for children*/
+	transform-style: flat;
+}
+    .lefty{
+    display: none;
+}
 
 }
 
