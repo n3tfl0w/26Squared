@@ -423,7 +423,7 @@ a:visited { color: #205caa; }
 }
 .twop {
 	background: 
-		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/Pressline2.png");
+		linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/images/pressline2.png");
 }
 .threep {
 	background: 
@@ -473,8 +473,8 @@ a:visited { color: #205caa; }
 /* Contact */
 .conto{
     height: 60vh;
-    background-image: url('../images/2.jpg');
-    background-position: bottom;
+    background-image: url('../images/logarska-valley-5.jpg');
+    background-position: middle;
     background-size: cover;
     position: relative;
 }
