@@ -850,6 +850,9 @@ li.under{
 
   .wrap { padding: 0 12px; }
 
+    .site-header{
+        height: auto;
+    }
   .site-nav {
     position: fixed;
     z-index: 10;
@@ -891,7 +894,15 @@ li.under{
   .shell-wrap{
       display:none;
   }
-
+    .tagline{
+      display:none;
+  }
+    .trip_imgs>img:nth-of-type(3){
+        display: none;
+    }
+    .trip_imgs{
+        max-width: 100%;
+    }
   .post-header h1 { font-size: 36px; }
   .post-content h2 { font-size: 28px; }
   .post-content h3 { font-size: 22px; }
@@ -907,10 +918,12 @@ li.under{
     margin: 0 0 15px; 
   }
     .newsletter {
+        max-width: 90%;
 				position: relative;
 				top: auto;
 				left: auto;
 				margin: 0;
+        margin-top: 100px;
 			}
 
 }   
